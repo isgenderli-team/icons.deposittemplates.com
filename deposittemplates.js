@@ -1,5 +1,6 @@
 window.onload = function(){
-    const a = document.querySelectorAll('i[icon-id]');
+    alert('awdadw')
+	const a = document.querySelectorAll('i[icon-id]');
     a.forEach(i => {
 fetch(`https://iclonit.com/request.php?id=${i.getAttribute('icon-id')}`).then(function(response) {
  return response.blob();
