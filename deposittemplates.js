@@ -1,8 +1,7 @@
 window.onload = function(){
-    alert('awdadw')
 	const a = document.querySelectorAll('i[icon-id]');
     a.forEach(i => {
-fetch(`https://iclonit.com/request.php?id=${i.getAttribute('icon-id')}`).then(function(response) {
+fetch(`https://iclonit.com/assets/icons/${i.getAttribute('icon-id')}.svg`).then(function(response) {
  return response.blob();
 }).then(function(myBlob) {
     
